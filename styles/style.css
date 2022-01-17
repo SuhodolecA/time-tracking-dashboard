@@ -33,4 +33,109 @@ a {
   display: inline-block;
   text-decoration: none;
 }
+
+.dashboard-header,
+.dashboard-main__activities-item-content {
+  background: #1c1f4a;
+}
+
+.dashboard-header {
+  border-radius: 1rem;
+}
+
+.dashboard-header__user {
+  background: #5847eb;
+  padding: 2.1em;
+  border-bottom-left-radius: .5em;
+  border-bottom-right-radius: .5em;
+  color: white;
+}
+
+.dashboard-header__user-avatar {
+  max-width: 8.5rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-bottom: 3.5rem;
+}
+
+.dashboard-header__user-info {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.dashboard-header__user-info__report {
+  font-size: .4em;
+  margin-bottom: .8em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.dashboard-header__period {
+  padding: 1.666em;
+}
+
+.dashboard-header__period-item + .dashboard-header__period-item {
+  margin-top: 1.333em;
+}
+
+.dashboard-header__period-item__btn {
+  font-family: "Rubik", sans-serif;
+  background: none;
+  color: #6f76c8;
+  border: 0;
+  cursor: pointer;
+}
+
+.dashboard-header__period-item__btn.active {
+  color: white;
+}
+
+.dashboard-main__activities-item {
+  background: #ff8c66;
+  border-radius: .5em;
+  padding-top: 2.5em;
+  background-image: url("/images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: 95% -10%;
+  color: white;
+}
+
+.dashboard-main__activities-item-content {
+  border-top-left-radius: .6em;
+  border-top-right-radius: .6em;
+  padding: 1.66em;
+}
+
+.dashboard-main__activities-item-content__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.dashboard-main__activities-item-content__header-title {
+  font-style: .8em;
+  font-weight: 400;
+}
+
+.dashboard-main__activities-item-content__header-link {
+  font-size: 1.5em;
+  margin-left: auto;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.dashboard-main__activities-item-content__data {
+  font-weight: 300;
+}
+
+.dashboard-main__activities-item-content__data-current {
+  color: white;
+  font-size: 2.5em;
+  margin-bottom: 0.45em;
+}
+
+.dashboard-main__activities-item-content__data-previous {
+  font-size: 0.8em;
+  color: #6f76c8;
+  color: #bdc1ff;
+}
 /*# sourceMappingURL=style.css.map */
