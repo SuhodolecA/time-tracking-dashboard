@@ -16,65 +16,189 @@
 </head>
 <body>
 
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
+  <div class="dashboard">
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+          <div class="dashboard-header__user">
+            <img src="images/image-jeremy.png" alt="avatar" class="dashboard-header__user-avatar" />
+            <div class="dashboard-header__user-info">
+              <p class="dashboard-header__user-info__report">Report for</p>
+              <p class="dashboard-header__user-info__name">Jeremy Robson</p>
+            </div>
+          </div>
+          <ul class="dashboard-header__period">
+            <li class="dashboard-header__menu-item">
+              <button class="dashboard-header__menu-item__btn" type="button">Daily</button>
+            </li>
+            <li class="dashboard-header__menu-item">
+              <button class="dashboard-header__menu-item__btn" type="button">Weekly</button>
+            </li>
+            <li class="dashboard-header__menu-item">
+              <button class="dashboard-header__menu-item__btn" type="button">Monthly</button>
+            </li>
+          </ul>
+        </header>
+        <main class="dashboard-main">
+          <ul class="dashboard-main__activities">
+            <li class="dashboard-main__activities-item">
+              <div class="dashboard-main__activities-item__header">
+                <h3 class="dashboard-main__activities-item__header-title">Work</h3>
+                <a href="#" class="dashboard-main__activities-item-link">...</a>
+              </div>
+              <div class="dashboard-main__activities-item__data">
+                <p class="dashboard-main__activities-item__data-current">
+                  <span class="dashboard-main__activities-item__data-current__value">32</span>
+                  <span class="dashboard-main__activities-item__data-current__units">hrs</span>
+                </p>
+                <p class="dashboard-main__activities-item__data-previous">
+                  <span class="dashboard-main__activities-item__data-previous__period">Last week</span>
+                  <span class="dashboard-main__activities-item__data-previous__value">36</span>
+                  <span class="dashboard-main__activities-item__data-previous__units">hrs</span>
+                </p>
+              </div>
+            </li>
+            <li class="dashboard-main__activities-item">
+              <div class="dashboard-main__activities-item__header">
+                <h3 class="dashboard-main__activities-item__header-title">Play</h3>
+                <a href="#" class="dashboard-main__activities-item-link">...</a>
+              </div>
+              <div class="dashboard-main__activities-item__data">
+                <p class="dashboard-main__activities-item__data-current">
+                  <span class="dashboard-main__activities-item__data-current__value">10</span>
+                  <span class="dashboard-main__activities-item__data-current__units">hrs</span>
+                </p>
+                <p class="dashboard-main__activities-item__data-previous">
+                  <span class="dashboard-main__activities-item__data-previous__period">Last week</span>
+                  <span class="dashboard-main__activities-item__data-previous__value">8</span>
+                  <span class="dashboard-main__activities-item__data-previous__units">hrs</span>
+                </p>
+              </div>
+            </li>
+            <li class="dashboard-main__activities-item">
+              <div class="dashboard-main__activities-item__header">
+                <h3 class="dashboard-main__activities-item__header-title">Study</h3>
+                <a href="#" class="dashboard-main__activities-item-link">...</a>
+              </div>
+              <div class="dashboard-main__activities-item__data">
+                <p class="dashboard-main__activities-item__data-current">
+                  <span class="dashboard-main__activities-item__data-current__value">4</span>
+                  <span class="dashboard-main__activities-item__data-current__units">hrs</span>
+                </p>
+                <p class="dashboard-main__activities-item__data-previous">
+                  <span class="dashboard-main__activities-item__data-previous__period">Last week</span>
+                  <span class="dashboard-main__activities-item__data-previous__value">7</span>
+                  <span class="dashboard-main__activities-item__data-previous__units">hrs</span>
+                </p>
+              </div>
+            </li>
+            <li class="dashboard-main__activities-item">
+              <div class="dashboard-main__activities-item__header">
+                <h3 class="dashboard-main__activities-item__header-title">Exercise</h3>
+                <a href="#" class="dashboard-main__activities-item-link">...</a>
+              </div>
+              <div class="dashboard-main__activities-item__data">
+                <p class="dashboard-main__activities-item__data-current">
+                  <span class="dashboard-main__activities-item__data-current__value">4</span>
+                  <span class="dashboard-main__activities-item__data-current__units">hrs</span>
+                </p>
+                <p class="dashboard-main__activities-item__data-previous">
+                  <span class="dashboard-main__activities-item__data-previous__period">Last week</span>
+                  <span class="dashboard-main__activities-item__data-previous__value">5</span>
+                  <span class="dashboard-main__activities-item__data-previous__units">hrs</span>
+                </p>
+              </div>
+            </li>
+            <li class="dashboard-main__activities-item">
+              <div class="dashboard-main__activities-item__header">
+                <h3 class="dashboard-main__activities-item__header-title">Social</h3>
+                <a href="#" class="dashboard-main__activities-item-link">...</a>
+              </div>
+              <div class="dashboard-main__activities-item__data">
+                <p class="dashboard-main__activities-item__data-current">
+                  <span class="dashboard-main__activities-item__data-current__value">5</span>
+                  <span class="dashboard-main__activities-item__data-current__units">hrs</span>
+                </p>
+                <p class="dashboard-main__activities-item__data-previous">
+                  <span class="dashboard-main__activities-item__data-previous__period">Last week</span>
+                  <span class="dashboard-main__activities-item__data-previous__value">10</span>
+                  <span class="dashboard-main__activities-item__data-previous__units">hrs</span>
+                </p>
+              </div>
+            </li>
+            <li class="dashboard-main__activities-item">
+              <div class="dashboard-main__activities-item__header">
+                <h3 class="dashboard-main__activities-item__header-title">Self Care</h3>
+                <a href="#" class="dashboard-main__activities-item-link">...</a>
+              </div>
+              <div class="dashboard-main__activities-item__data">
+                <p class="dashboard-main__activities-item__data-current">
+                  <span class="dashboard-main__activities-item__data-current__value">2</span>
+                  <span class="dashboard-main__activities-item__data-current__units">hrs</span>
+                </p>
+                <p class="dashboard-main__activities-item__data-previous">
+                  <span class="dashboard-main__activities-item__data-previous__period">Last week</span>
+                  <span class="dashboard-main__activities-item__data-previous__value">2</span>
+                  <span class="dashboard-main__activities-item__data-previous__units">hrs</span>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </main>
+    </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/SuhodolecA" target="_blank">Sukhadolets Anton</a>.
   </div>
 </body>
 </html>
+
+
+
+<!-- Work -->
+<!-- 5hrs daily -->
+<!-- Previous - 7hrs daily -->
+<!-- 32hrs weekly -->
+<!-- Previous - 36hrs weekly -->
+<!-- 103hrs monthly -->
+<!-- Previous - 128hrs monthly -->
+
+<!-- Play -->
+<!-- 1hr daily -->
+<!-- Previous - 2hrs daily -->
+<!-- 10hrs weekly -->
+<!-- Previous - 8hrs weekly -->
+<!-- 23hrs monthly -->
+<!-- Previous - 29hrs monthly -->
+
+<!-- Study -->
+<!-- 0hrs daily -->
+<!-- Previous - 1hr daily -->
+<!-- 4hrs weekly -->
+<!-- Previous - 7hrs weekly -->
+<!-- 13hrs monthly -->
+<!-- Previous - 19hrs monthly -->
+
+<!-- Exercise -->
+<!-- 1hr daily -->
+<!-- Previous - 1hr daily -->
+<!-- 4hrs weekly -->
+<!-- Previous - 5hrs weekly -->
+<!-- 11hrs monthly -->
+<!-- Previous - 18hrs monthly -->
+
+<!-- Social -->
+<!-- 1hr daily -->
+<!-- Previous - 3hrs daily -->
+<!-- 5hrs weekly -->
+<!-- Previous - 10hrs weekly -->
+<!-- 21hrs monthly -->
+<!-- Previous - 23hrs monthly -->
+
+<!-- Self Care -->
+<!-- 0hrs daily -->
+<!-- Previous - 1hr daily -->
+<!-- 2hrs weekly -->
+<!-- Previous - 2hrs weekly -->
+<!-- 7hrs monthly -->
+<!-- Previous - 11hrs monthly -->
