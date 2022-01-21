@@ -22,7 +22,11 @@ body {
   max-width: 1150px;
   padding: 0 1.5rem;
   margin: 0 auto;
-  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1.5em;
 }
 
 ul {
@@ -34,20 +38,44 @@ a {
   text-decoration: none;
 }
 
+path {
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.dashboard {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .dashboard-header,
 .dashboard-main__activities-item-content {
   background: #1c1f4a;
 }
 
 .dashboard-header {
-  border-radius: 1rem;
+  border-radius: 1.5rem;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 3 / 2;
+  overflow: hidden;
 }
 
 .dashboard-header__user {
   background: #5847eb;
-  padding: 2.1em;
-  border-bottom-left-radius: .5em;
-  border-bottom-right-radius: .5em;
+  padding: 1.7em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
   color: white;
 }
 
@@ -61,12 +89,19 @@ a {
 .dashboard-header__user-info {
   font-size: 1.5em;
   font-weight: 300;
+  margin-bottom: 2em;
 }
 
 .dashboard-header__user-info__report {
-  font-size: .4em;
-  margin-bottom: .8em;
+  font-size: .5em;
+  margin-bottom: .6em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.dashboard-header__user-info__name {
+  font-size: 1.3em;
+  font-weight: 300;
+  line-height: 1.2;
 }
 
 .dashboard-header__period {
@@ -89,27 +124,45 @@ a {
   color: white;
 }
 
+.dashboard-main {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: 1 / 2 / 3 / 5;
+}
+
+.dashboard-main__activities {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.5em;
+}
+
 .dashboard-main__activities-item {
   background: #ff8c66;
-  border-radius: .5em;
+  border-radius: .6em;
   padding-top: 2.5em;
   background-image: url("/images/icon-work.svg");
   background-repeat: no-repeat;
-  background-position: 95% -10%;
+  background-position: 95% -5px;
   color: white;
+  overflow: hidden;
 }
 
 .dashboard-main__activities-item-content {
-  border-top-left-radius: .6em;
-  border-top-right-radius: .6em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
   padding: 1.66em;
+  min-height: 100%;
 }
 
 .dashboard-main__activities-item-content__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 2em;
+  margin-bottom: 1.8em;
 }
 
 .dashboard-main__activities-item-content__header-title {
@@ -121,6 +174,21 @@ a {
   font-size: 1.5em;
   margin-left: auto;
   color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: color .3s linear;
+  transition: color .3s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dashboard-main__activities-item-content__header-link:hover path {
+  fill: white;
 }
 
 .dashboard-main__activities-item-content__data {
@@ -129,13 +197,38 @@ a {
 
 .dashboard-main__activities-item-content__data-current {
   color: white;
-  font-size: 2.5em;
-  margin-bottom: 0.45em;
+  font-size: 2.3em;
+  margin-bottom: 0.4em;
 }
 
 .dashboard-main__activities-item-content__data-previous {
   font-size: 0.8em;
   color: #6f76c8;
   color: #bdc1ff;
+}
+
+.dashboard-main__activities-item.play {
+  background-color: #56c2e6;
+  background-image: url("/images/icon-play.svg");
+}
+
+.dashboard-main__activities-item.study {
+  background-color: #ff5c7c;
+  background-image: url("/images/icon-study.svg");
+}
+
+.dashboard-main__activities-item.exercise {
+  background-color: #4acf81;
+  background-image: url("/images/icon-exercise.svg");
+}
+
+.dashboard-main__activities-item.social {
+  background-color: #7536d3;
+  background-image: url("/images/icon-social.svg");
+}
+
+.dashboard-main__activities-item.self-care {
+  background-color: #f1c65b;
+  background-image: url("/images/icon-self-care.svg");
 }
 /*# sourceMappingURL=style.css.map */

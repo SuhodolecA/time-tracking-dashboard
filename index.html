@@ -39,15 +39,15 @@
             <p class="dashboard-header__user-info__name">Jeremy Robson</p>
           </div>
         </div>
-        <ul class="dashboard-header__period">
+        <ul class="dashboard-header__period" role="tablist">
           <li class="dashboard-header__period-item">
-            <button class="dashboard-header__period-item__btn" type="button">Daily</button>
+            <button class="dashboard-header__period-item__btn" type="button" role="tab" aria-selected="false">Daily</button>
           </li>
           <li class="dashboard-header__period-item">
-            <button class="dashboard-header__period-item__btn active" type="button">Weekly</button>
+            <button class="dashboard-header__period-item__btn active" type="button" role="tab" aria-selected="true">Weekly</button>
           </li>
           <li class="dashboard-header__period-item">
-            <button class="dashboard-header__period-item__btn" type="button">Monthly</button>
+            <button class="dashboard-header__period-item__btn" type="button" role="tab" aria-selected="false">Monthly</button>
           </li>
         </ul>
       </header>
@@ -57,111 +57,148 @@
             <div class="dashboard-main__activities-item-content">
               <div class="dashboard-main__activities-item-content__header">
                 <h3 class="dashboard-main__activities-item-content__header-title">Work</h3>
-                <a href="#" class="dashboard-main__activities-item-content__header-link">...</a>
+                <a href="#work" class="dashboard-main__activities-item-content__header-link">
+                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#BBC0FF" fill-rule="evenodd" />
+                  </svg>
+                </a>
               </div>
               <div class="dashboard-main__activities-item-content__data">
                 <p class="dashboard-main__activities-item-content__data-current">
-                  <span class="dashboard-main__activities-item-content__data-current__value">32</span><span class="dashboard-main__activities-item-content__data-current__units">hrs</span>
+                  <span class="dashboard-main__activities-item-content__data-current__value">32</span><span
+                    class="dashboard-main__activities-item-content__data-current__units">hrs</span>
                 </p>
                 <p class="dashboard-main__activities-item-content__data-previous">
-                  <span class="dashboard-main__activities-item-content__data-previous__period">Last week</span>
-                  <span class="dashboard-main__activities-item-content__data-previous__value">36</span>
-                  <span class="dashboard-main__activities-item-content__data-previous__units">hrs</span>
+                  <span class="dashboard-main__activities-item-content__data-previous__period">Last week -</span>
+                  <span class="dashboard-main__activities-item-content__data-previous__value">36</span><span
+                    class="dashboard-main__activities-item-content__data-previous__units">hrs</span>
                 </p>
               </div>
             </div>
           </li>
-          <li class="dashboard-main__activities-item">
+          <li class="dashboard-main__activities-item play">
             <div class="dashboard-main__activities-item-content">
               <div class="dashboard-main__activities-item-content__header">
                 <h3 class="dashboard-main__activities-item-content__header-title">Play</h3>
-                <a href="#" class="dashboard-main__activities-item-content__header-link">...</a>
+                <a href="#play" class="dashboard-main__activities-item-content__header-link">
+                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#BBC0FF" fill-rule="evenodd" />
+                  </svg>
+                </a>
               </div>
               <div class="dashboard-main__activities-item-content__data">
                 <p class="dashboard-main__activities-item-content__data-current">
-                  <span class="dashboard-main__activities-item-content__data-current__value">10</span>
-                  <span class="dashboard-main__activities-item-content__data-current__units">hrs</span>
+                  <span class="dashboard-main__activities-item-content__data-current__value">10</span><span
+                    class="dashboard-main__activities-item-content__data-current__units">hrs</span>
                 </p>
                 <p class="dashboard-main__activities-item-content__data-previous">
-                  <span class="dashboard-main__activities-item-content__data-previous__period">Last week</span>
-                  <span class="dashboard-main__activities-item-content__data-previous__value">8</span>
-                  <span class="dashboard-main__activities-item-content__data-previous__units">hrs</span>
+                  <span class="dashboard-main__activities-item-content__data-previous__period">Last week -</span>
+                  <span class="dashboard-main__activities-item-content__data-previous__value">8</span><span
+                    class="dashboard-main__activities-item-content__data-previous__units">hrs</span>
                 </p>
               </div>
             </div>
           </li>
-          <li class="dashboard-main__activities-item">
+          <li class="dashboard-main__activities-item study">
             <div class="dashboard-main__activities-item-content">
               <div class="dashboard-main__activities-item-content__header">
                 <h3 class="dashboard-main__activities-item-content__header-title">Study</h3>
-                <a href="#" class="dashboard-main__activities-item-content__header-link">...</a>
+                <a href="#study" class="dashboard-main__activities-item-content__header-link">
+                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#BBC0FF" fill-rule="evenodd" />
+                  </svg>
+                </a>
               </div>
               <div class="dashboard-main__activities-item-content__data">
                 <p class="dashboard-main__activities-item-content__data-current">
-                  <span class="dashboard-main__activities-item-content__data-current__value">4</span>
-                  <span class="dashboard-main__activities-item-content__data-current__units">hrs</span>
+                  <span class="dashboard-main__activities-item-content__data-current__value">4</span><span
+                    class="dashboard-main__activities-item-content__data-current__units">hrs</span>
                 </p>
                 <p class="dashboard-main__activities-item-content__data-previous">
-                  <span class="dashboard-main__activities-item-content__data-previous__period">Last week</span>
-                  <span class="dashboard-main__activities-item-content__data-previous__value">7</span>
-                  <span class="dashboard-main__activities-item-content__data-previous__units">hrs</span>
+                  <span class="dashboard-main__activities-item-content__data-previous__period">Last week -</span>
+                  <span class="dashboard-main__activities-item-content__data-previous__value">7</span><span
+                    class="dashboard-main__activities-item-content__data-previous__units">hrs</span>
                 </p>
               </div>
             </div>
           </li>
-          <li class="dashboard-main__activities-item">
+          <li class="dashboard-main__activities-item exercise">
             <div class="dashboard-main__activities-item-content">
               <div class="dashboard-main__activities-item-content__header">
                 <h3 class="dashboard-main__activities-item-content__header-title">Exercise</h3>
-                <a href="#" class="dashboard-main__activities-item-content__header-link">...</a>
+                <a href="#exercise" class="dashboard-main__activities-item-content__header-link">
+                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#BBC0FF" fill-rule="evenodd" />
+                  </svg>
+                </a>
               </div>
               <div class="dashboard-main__activities-item-content__data">
                 <p class="dashboard-main__activities-item-content__data-current">
-                  <span class="dashboard-main__activities-item-content__data-current__value">4</span>
-                  <span class="dashboard-main__activities-item-content__data-current__units">hrs</span>
+                  <span class="dashboard-main__activities-item-content__data-current__value">4</span><span
+                    class="dashboard-main__activities-item-content__data-current__units">hrs</span>
                 </p>
                 <p class="dashboard-main__activities-item-content__data-previous">
-                  <span class="dashboard-main__activities-item-content__data-previous__period">Last week</span>
-                  <span class="dashboard-main__activities-item-content__data-previous__value">5</span>
-                  <span class="dashboard-main__activities-item-content__data-previous__units">hrs</span>
+                  <span class="dashboard-main__activities-item-content__data-previous__period">Last week -</span>
+                  <span class="dashboard-main__activities-item-content__data-previous__value">5</span><span
+                    class="dashboard-main__activities-item-content__data-previous__units">hrs</span>
                 </p>
               </div>
             </div>
           </li>
-          <li class="dashboard-main__activities-item">
+          <li class="dashboard-main__activities-item social">
             <div class="dashboard-main__activities-item-content">
               <div class="dashboard-main__activities-item-content__header">
                 <h3 class="dashboard-main__activities-item-content__header-title">Social</h3>
-                <a href="#" class="dashboard-main__activities-item-content__header-link">...</a>
+                <a href="#social" class="dashboard-main__activities-item-content__header-link">
+                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#BBC0FF" fill-rule="evenodd" />
+                  </svg>
+                </a>
               </div>
               <div class="dashboard-main__activities-item-content__data">
                 <p class="dashboard-main__activities-item-content__data-current">
-                  <span class="dashboard-main__activities-item-content__data-current__value">5</span>
-                  <span class="dashboard-main__activities-item-content__data-current__units">hrs</span>
+                  <span class="dashboard-main__activities-item-content__data-current__value">5</span><span
+                    class="dashboard-main__activities-item-content__data-current__units">hrs</span>
                 </p>
                 <p class="dashboard-main__activities-item-content__data-previous">
-                  <span class="dashboard-main__activities-item-content__data-previous__period">Last week</span>
-                  <span class="dashboard-main__activities-item-content__data-previous__value">10</span>
-                  <span class="dashboard-main__activities-item-content__data-previous__units">hrs</span>
+                  <span class="dashboard-main__activities-item-content__data-previous__period">Last week -</span>
+                  <span class="dashboard-main__activities-item-content__data-previous__value">10</span><span
+                    class="dashboard-main__activities-item-content__data-previous__units">hrs</span>
                 </p>
               </div>
             </div>
           </li>
-          <li class="dashboard-main__activities-item">
-            <div class="dashboard-main__activities-item-content">>
+          <li class="dashboard-main__activities-item self-care">
+            <div class="dashboard-main__activities-item-content">
               <div class="dashboard-main__activities-item-content__header">
                 <h3 class="dashboard-main__activities-item-content__header-title">Self Care</h3>
-                <a href="#" class="dashboard-main__activities-item-content__header-link">...</a>
+                <a href="#self-care" class="dashboard-main__activities-item-content__header-link">
+                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#BBC0FF" fill-rule="evenodd" />
+                  </svg>
+                </a>
               </div>
               <div class="dashboard-main__activities-item-content__data">
                 <p class="dashboard-main__activities-item-content__data-current">
-                  <span class="dashboard-main__activities-item-content__data-current__value">2</span>
-                  <span class="dashboard-main__activities-item-content__data-current__units">hrs</span>
+                  <span class="dashboard-main__activities-item-content__data-current__value">2</span><span
+                    class="dashboard-main__activities-item-content__data-current__units">hrs</span>
                 </p>
                 <p class="dashboard-main__activities-item-content__data-previous">
-                  <span class="dashboard-main__activities-item-content__data-previous__period">Last week</span>
-                  <span class="dashboard-main__activities-item-content__data-previous__value">2</span>
-                  <span class="dashboard-main__activities-item-content__data-previous__units">hrs</span>
+                  <span class="dashboard-main__activities-item-content__data-previous__period">Last week -</span>
+                  <span class="dashboard-main__activities-item-content__data-previous__value">2</span><span
+                    class="dashboard-main__activities-item-content__data-previous__units">hrs</span>
                 </p>
               </div>
             </div </li>
