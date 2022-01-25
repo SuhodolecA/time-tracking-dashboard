@@ -118,6 +118,12 @@ path {
   color: #6f76c8;
   border: 0;
   cursor: pointer;
+  -webkit-transition: color .3s linear;
+  transition: color .3s linear;
+}
+
+.dashboard-header__period-item__btn:hover {
+  color: white;
 }
 
 .dashboard-header__period-item__btn.active {
@@ -142,37 +148,48 @@ path {
 
 .dashboard-main__activities-item {
   background: #ff8c66;
-  border-radius: .6em;
+  border-radius: .8em;
   padding-top: 2.5em;
   background-image: url("/images/icon-work.svg");
   background-repeat: no-repeat;
   background-position: 95% -5px;
   color: white;
-  overflow: hidden;
 }
 
 .dashboard-main__activities-item-content {
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
+  border-radius: .8em;
   padding: 1.66em;
   min-height: 100%;
+  cursor: pointer;
+  -webkit-transition: background .3s linear;
+  transition: background .3s linear;
+  position: relative;
+}
+
+.dashboard-main__activities-item-content:hover {
+  background: #33387a;
 }
 
 .dashboard-main__activities-item-content__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 1.8em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .dashboard-main__activities-item-content__header-title {
   font-style: .8em;
   font-weight: 400;
+  z-index: 97;
 }
 
 .dashboard-main__activities-item-content__header-link {
   font-size: 1.5em;
-  margin-left: auto;
   color: rgba(255, 255, 255, 0.6);
   -webkit-transition: color .3s linear;
   transition: color .3s linear;
@@ -187,24 +204,58 @@ path {
           justify-content: center;
 }
 
+.dashboard-main__activities-item-content__header-link svg {
+  z-index: 99;
+}
+
 .dashboard-main__activities-item-content__header-link:hover path {
   fill: white;
 }
 
+.dashboard-main__activities-item-content__header-link::before {
+  content: '';
+  background: #1c1f4a;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  border-radius: .54em;
+}
+
+.dashboard-main__activities-item-content__header-link:hover::before {
+  display: block;
+  background: #1c1f4a;
+}
+
 .dashboard-main__activities-item-content__data {
   font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 1.8em;
 }
 
 .dashboard-main__activities-item-content__data-current {
   color: white;
   font-size: 2.3em;
   margin-bottom: 0.4em;
+  z-index: 97;
 }
 
 .dashboard-main__activities-item-content__data-previous {
   font-size: 0.8em;
   color: #6f76c8;
   color: #bdc1ff;
+  z-index: 97;
 }
 
 .dashboard-main__activities-item.play {
