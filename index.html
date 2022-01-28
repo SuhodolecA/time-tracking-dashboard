@@ -45,7 +45,7 @@
             <button class="dashboard-header__period-item__btn" type="button" role="tab" aria-selected="false">Daily</button>
           </li>
           <li class="dashboard-header__period-item">
-            <button class="dashboard-header__period-item__btn active" type="button" role="tab" aria-selected="true">Weekly</button>
+            <button class="dashboard-header__period-item__btn" type="button" role="tab" aria-selected="true">Weekly</button>
           </li>
           <li class="dashboard-header__period-item">
             <button class="dashboard-header__period-item__btn" type="button" role="tab" aria-selected="false">Monthly</button>
@@ -68,12 +68,12 @@
               </div>
               <div class="dashboard-main__activities-item-content__data">
                 <p class="dashboard-main__activities-item-content__data-current">
-                  <span class="dashboard-main__activities-item-content__data-current__value">32</span><span
+                  <span class="dashboard-main__activities-item-content__data-current__value"></span><span
                     class="dashboard-main__activities-item-content__data-current__units">hrs</span>
                 </p>
                 <p class="dashboard-main__activities-item-content__data-previous">
                   <span class="dashboard-main__activities-item-content__data-previous__period">Last week -</span>
-                  <span class="dashboard-main__activities-item-content__data-previous__value">36</span><span
+                  <span class="dashboard-main__activities-item-content__data-previous__value"></span><span
                     class="dashboard-main__activities-item-content__data-previous__units">hrs</span>
                 </p>
               </div>
@@ -93,12 +93,12 @@
               </div>
               <div class="dashboard-main__activities-item-content__data">
                 <p class="dashboard-main__activities-item-content__data-current">
-                  <span class="dashboard-main__activities-item-content__data-current__value">10</span><span
+                  <span class="dashboard-main__activities-item-content__data-current__value"></span><span
                     class="dashboard-main__activities-item-content__data-current__units">hrs</span>
                 </p>
                 <p class="dashboard-main__activities-item-content__data-previous">
                   <span class="dashboard-main__activities-item-content__data-previous__period">Last week -</span>
-                  <span class="dashboard-main__activities-item-content__data-previous__value">8</span><span
+                  <span class="dashboard-main__activities-item-content__data-previous__value"></span><span
                     class="dashboard-main__activities-item-content__data-previous__units">hrs</span>
                 </p>
               </div>
@@ -118,12 +118,12 @@
               </div>
               <div class="dashboard-main__activities-item-content__data">
                 <p class="dashboard-main__activities-item-content__data-current">
-                  <span class="dashboard-main__activities-item-content__data-current__value">4</span><span
+                  <span class="dashboard-main__activities-item-content__data-current__value"></span><span
                     class="dashboard-main__activities-item-content__data-current__units">hrs</span>
                 </p>
                 <p class="dashboard-main__activities-item-content__data-previous">
                   <span class="dashboard-main__activities-item-content__data-previous__period">Last week -</span>
-                  <span class="dashboard-main__activities-item-content__data-previous__value">7</span><span
+                  <span class="dashboard-main__activities-item-content__data-previous__value"></span><span
                     class="dashboard-main__activities-item-content__data-previous__units">hrs</span>
                 </p>
               </div>
@@ -143,12 +143,12 @@
               </div>
               <div class="dashboard-main__activities-item-content__data">
                 <p class="dashboard-main__activities-item-content__data-current">
-                  <span class="dashboard-main__activities-item-content__data-current__value">4</span><span
+                  <span class="dashboard-main__activities-item-content__data-current__value"></span><span
                     class="dashboard-main__activities-item-content__data-current__units">hrs</span>
                 </p>
                 <p class="dashboard-main__activities-item-content__data-previous">
                   <span class="dashboard-main__activities-item-content__data-previous__period">Last week -</span>
-                  <span class="dashboard-main__activities-item-content__data-previous__value">5</span><span
+                  <span class="dashboard-main__activities-item-content__data-previous__value"></span><span
                     class="dashboard-main__activities-item-content__data-previous__units">hrs</span>
                 </p>
               </div>
@@ -168,12 +168,12 @@
               </div>
               <div class="dashboard-main__activities-item-content__data">
                 <p class="dashboard-main__activities-item-content__data-current">
-                  <span class="dashboard-main__activities-item-content__data-current__value">5</span><span
+                  <span class="dashboard-main__activities-item-content__data-current__value"></span><span
                     class="dashboard-main__activities-item-content__data-current__units">hrs</span>
                 </p>
                 <p class="dashboard-main__activities-item-content__data-previous">
                   <span class="dashboard-main__activities-item-content__data-previous__period">Last week -</span>
-                  <span class="dashboard-main__activities-item-content__data-previous__value">10</span><span
+                  <span class="dashboard-main__activities-item-content__data-previous__value"></span><span
                     class="dashboard-main__activities-item-content__data-previous__units">hrs</span>
                 </p>
               </div>
@@ -198,7 +198,7 @@
                 </p>
                 <p class="dashboard-main__activities-item-content__data-previous">
                   <span class="dashboard-main__activities-item-content__data-previous__period">Last week -</span>
-                  <span class="dashboard-main__activities-item-content__data-previous__value">2</span><span
+                  <span class="dashboard-main__activities-item-content__data-previous__value"></span><span
                     class="dashboard-main__activities-item-content__data-previous__units">hrs</span>
                 </p>
               </div>
@@ -207,60 +207,75 @@
       </main>
     </div>
   </div>
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/SuhodolecA" target="_blank">Sukhadolets Anton</a>.
-  </div>
+  </footer>
+  <script>
+    const periodList = document.querySelectorAll('.dashboard-header__period-item__btn');
+    const currentValues = document.querySelectorAll('.dashboard-main__activities-item-content__data-current__value');
+    const previousValues = document.querySelectorAll('.dashboard-main__activities-item-content__data-previous__value');
+    let data;
+
+
+    // get data from json and update timetracker
+    fetch('data.json')
+        .then(response => response.json())
+        .then(d => {
+          data = d;
+          updateTrackingValues(previousValues);
+          updateTrackingValues(currentValues);
+        })
+        
+        /* get current period 
+        1. Convert node list to array for convenience
+        2. Looking for element with attribute aria-selected=true(active element), 
+        we using brackets [] because filter method return array and we need element
+        3. Get text from element 
+        4. Convert text to lowercase so we will use this text in data.json where all text in lowercase format
+        */
+        function getCurrentPeriod(list) {
+         return Array.from(list)
+                .filter(i => i.getAttribute('aria-selected') == 'true')[0]
+                .textContent
+                .toLowerCase();
+        }
+
+
+        /* update data 
+        1. Convert value(node list) to array for use array methods
+        2. Get current period for using in json data
+        3. Get current time(current or previous) for in json data
+        4. Looping values list and updating information from data.json
+        */ 
+        function updateTrackingValues(value) {
+          const val = Array.from(value);
+          const currentPeriod = getCurrentPeriod(periodList);
+          const currentTime = val
+                              .some(i => i.classList
+                              .contains("dashboard-main__activities-item-content__data-current__value")) ? "current" : "previous";
+          for(let  i = 0; i < val.length; i++) {
+            val[i].textContent = data[i].timeframes[currentPeriod][currentTime];  
+          }
+        } 
+       
+
+        /* update period btn
+        1.Looping period list(daily, weekly, monthly buttons) and set aria-selected attribute to false(reset css styles)
+        2. Set to active button(clicked) aria-selected=true(set css styles)
+        3. Execute updateTrackingValues function for updating data(for curren and previous lines)
+         */
+        function updatePeriodBtn() {
+          periodList.forEach(btn => btn.setAttribute('aria-selected', 'false'));
+          this.setAttribute('aria-selected', 'true');
+          updateTrackingValues(previousValues);
+          updateTrackingValues(currentValues);
+        }
+
+        // add event listener for every period button
+        periodList.forEach(btn => btn.addEventListener("click", updatePeriodBtn))
+
+  </script>
 </body>
 
 </html>
-
-
-
-<!-- Work -->
-<!-- 5hrs daily -->
-<!-- Previous - 7hrs daily -->
-<!-- 32hrs weekly -->
-<!-- Previous - 36hrs weekly -->
-<!-- 103hrs monthly -->
-<!-- Previous - 128hrs monthly -->
-
-<!-- Play -->
-<!-- 1hr daily -->
-<!-- Previous - 2hrs daily -->
-<!-- 10hrs weekly -->
-<!-- Previous - 8hrs weekly -->
-<!-- 23hrs monthly -->
-<!-- Previous - 29hrs monthly -->
-
-<!-- Study -->
-<!-- 0hrs daily -->
-<!-- Previous - 1hr daily -->
-<!-- 4hrs weekly -->
-<!-- Previous - 7hrs weekly -->
-<!-- 13hrs monthly -->
-<!-- Previous - 19hrs monthly -->
-
-<!-- Exercise -->
-<!-- 1hr daily -->
-<!-- Previous - 1hr daily -->
-<!-- 4hrs weekly -->
-<!-- Previous - 5hrs weekly -->
-<!-- 11hrs monthly -->
-<!-- Previous - 18hrs monthly -->
-
-<!-- Social -->
-<!-- 1hr daily -->
-<!-- Previous - 3hrs daily -->
-<!-- 5hrs weekly -->
-<!-- Previous - 10hrs weekly -->
-<!-- 21hrs monthly -->
-<!-- Previous - 23hrs monthly -->
-
-<!-- Self Care -->
-<!-- 0hrs daily -->
-<!-- Previous - 1hr daily -->
-<!-- 2hrs weekly -->
-<!-- Previous - 2hrs weekly -->
-<!-- 7hrs monthly -->
-<!-- Previous - 11hrs monthly -->

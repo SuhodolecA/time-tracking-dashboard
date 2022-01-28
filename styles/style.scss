@@ -178,7 +178,7 @@
                     color: hsl(100, 100%, 100%);
                 }
 
-                &.active {
+                &[aria-selected="true"] {
                     color: hsl(100, 100%, 100%);
                 }
             } 
@@ -210,7 +210,7 @@
                 background-repeat: no-repeat;
                 background-position: 95% -5px;
                 color: hsl(100, 100%, 100%);
-                // overflow: hidden;
+                overflow: hidden;
 
                 &-content {
                     border-radius: .8em;

@@ -209,7 +209,7 @@ h1 {
   color: white;
 }
 
-.dashboard-header__period-item__btn.active {
+.dashboard-header__period-item__btn[aria-selected="true"] {
   color: white;
 }
 
@@ -254,6 +254,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: 95% -5px;
   color: white;
+  overflow: hidden;
 }
 
 .dashboard-main__activities-item-content {
