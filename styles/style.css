@@ -139,6 +139,7 @@ h1 {
 
 .dashboard-header__user-info__report {
   font-size: .5em;
+  font-weight: 300;
   margin-bottom: .6em;
   color: rgba(255, 255, 255, 0.6);
 }
