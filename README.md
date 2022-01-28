@@ -1,5 +1,7 @@
 # Frontend Mentor - Time tracking dashboard
 
+[Link to solution](https://time-tracking-dashboard-umber.vercel.app/)
+
 ![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
